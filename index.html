@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soluciones TIC | GT Group</title>
+    <meta name="description" content="GT Group SAS es una empresa colombiana que brinda soluciones en Tecnología de la Información y las Telecomunicaciones. Soporte técnico, Mesa de Ayuda, Soluciones de impresión, Cableado estructurado, ...">
+    <meta name="theme-color" content="#1c5dad">
+    <meta name="author" content="Juan Carlos Oliveros">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dosis|Work+Sans&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway&display=swap" rel="stylesheet"> 
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="svg/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="svg/favicon.svg" type="image/x-icon">
+
+</head>
+<body>
+    <header id="header">
+        <div class="header_top flex flex_c_v_end ">
+            <div class="links_top">
+                <a href="#">log in</a>
+            </div>
+            <div class="social_networks">
+                <a class="" href="https://www.facebook.com/gtgroupsas" target="_blank">
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a class="" href="https://www.instagram.com/gtgroupsas" target="_blank">
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <a class="" href="https://www.linkedin.com/gtgroupsas" target="_blank">
+                    <span><i class="fab fa-linkedin"></i></span>
+                </a>
+            </div>
+        </div>
+        <nav class="navbar bg_less" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="//gtgroupcolombia.com">
+                        <img class="logo is-hidden-mobile" src="svg/logo.svg" alt="Logo GT Group">
+                        <img class="logo is-hidden-desktop" src="svg/logo_light.svg" alt="Logo GT Group">
+                    </a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                        data-target="nav_menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="nav_menu" class="navbar-menu">
+                    <div class="navbar-start"></div>
+                    <div class="navbar-end">                    
+                        <a class="navbar-item" href="#header">Inicio</a>
+                        <a class="navbar-item" href="#services">Servicios</a>
+                        <a class="navbar-item" href="#coverage">Cobertura</a>
+
+                        <div class="navbar-item">                            
+                            <a class="btn btn_orange" href="#contact">
+                                Contáctanos
+                            </a>                            
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </nav>
+        <section class="home_main">
+            <div class="container">
+                <div class="columns is-4">
+                    <div class="column flex flex_column flex_v_start flex_c_v_end">
+                        <!-- <hr class="hr_title"> -->
+                        <h2>Brindamos a tu negocio <span>Soluciones TIC</span></h2>                   
+                        <p>Los sistemas no son estáticos, van cambiando de acuerdo a las condiciones de los mercados, 
+                            a los clientes, a las normativas y a los procesos de cada empresa, esto hace que el 
+                            mantenimiento, soporte de ofimática y microinformática tenga que adaptarse a estos cambios.</p>                        
+                        <a href="#contact" class="btn btn_orange">Quiero saber más</a>
+                    </div>
+                    <div class="column is-8">
+                        <figure>
+                            <img class="isometric" src="svg/soluciones_tic.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="services">
+            <div class="container">
+                <div class="column is-10 is-offset-1 has-text-centered">
+                    <h3 class="less_bar">Nuestras <span>Soluciones TIC</span></h3>
+                    <p>Ofrecemos servicios tecnológicos empresariales que les premitan a nuestros clientes concentrar 
+                        sus esfuerzos en la naturaleza de su propio negocio con la tranquilidad de que su infraestructura 
+                        tecnológica estará siempre en prefecto estado de operación.</p>
+                </div>
+                <div class="tabs is-centered">
+                    <ul class="flex_s_arround">
+                        <li class="tab is-active" onclick="openTab(event,'tab_1')">
+                            <a class="flex_column">
+                                <div class="icon_tab flex flex_c_v_center flex_v_center">
+                                    <i class="fas fa-headset fa-2x"></i>
+                                </div>
+                                <span class="tab_label">Soporte</span>
+                            </a>
+                        </li>
+                        <li class="tab" onclick="openTab(event,'tab_2')">
+                                <a class="flex_column">
+                                    <div class="icon_tab flex flex_c_v_center flex_v_center">
+                                        <i class="fas fa-print fa-2x"></i>
+                                    </div>
+                                    <span class="tab_label">Impresión</span>
+                                </a>
+                            </li>
+                        <li class="tab" onclick="openTab(event,'tab_3')">
+                            <a class="flex_column">
+                                <div class="icon_tab flex flex_c_v_center flex_v_center">
+                                    <i class="fas fa-server fa-2x"></i>
+                                </div>
+                                <span class="tab_label">Infraestructura</span>
+                            </a>
+                        </li>
+                        <li class="tab" onclick="openTab(event,'tab_4')">
+                            <a class="flex_column">
+                                <div class="icon_tab flex flex_c_v_center flex_v_center">
+                                    <i class="fas fa-phone-volume fa-2x"></i>
+                                </div>
+                                <span class="tab_label">Voz</span>
+                            </a>
+                        </li>
+                        <li class="tab" onclick="openTab(event,'tab_5')">
+                            <a class="flex_column">
+                                <div class="icon_tab flex flex_c_v_center flex_v_center">
+                                    <i class="fas fa-database fa-2x"></i>
+                                </div>
+                                <span class="tab_label">Almacenamiento</span>
+                            </a>
+                        </li>
+                        <li class="tab" onclick="openTab(event,'tab_6')">
+                            <a class="flex_column">
+                                <div class="icon_tab flex flex_c_v_center flex_v_center">
+                                    <i class="fas fa-code fa-2x"></i>
+                                </div>
+                                <span class="tab_label">Aplicaciones</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Content Tab 1 -->
+                <div id="tab_1" class="content_tab current_content">
+                    <div class="columns">
+                        <div class="column">
+                            <h4><span>Soporte técnico especializado</span></h4>
+                            <p>Alcanzar mayor productividad y respaldado con un aliado estratégico que se ocupe de sus comunicaciones mientras su organización se dedica a su negocio.</p>
+        
+                            <ul class="list-style">
+                                <li>Mesa de servicios</li>
+                                <li>Soporte en sitio</li>
+                                <li>Soporte dedicado</li>
+                                <li>Administración de recambio</li>
+                                <li>Mantenimiento preventivo</li>
+                                <li>Soporte correctivo</li>
+                                <li>Renovación tecnológica</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <img class="img_tab" src="svg/soporte_tecnico.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Tab 2 -->
+                <div id="tab_2" class="content_tab">
+                    <div class="columns">
+                        <div class="column">
+                            <img class="img_tab" src="svg/soluciones_impresion.svg" alt="">
+                        </div>
+                        <div class="column">
+                            <h4><span>Soluciones de impresión</span></h4>
+                            <p>Obtener mayores niveles de eficiencia en su parque de impresión bajo la optimización de los recursos.</p>
+        
+                            <ul class="list-style">
+                                <li>Outsourcing de impresión</li>
+                                <li>Mesa de sevicios</li>
+                                <li>Soporte correctivo</li>
+                                <li>Tracking de impresión</li>
+                                <li>Renta de equipos</li>
+                                <li>Licenciamiento</li>
+                                <li>Repuestos y consumibles</li>
+                                <li>Administración de recambios</li>
+                                <li>Renovación tecnológica</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+
+                <!-- Content Tab 3 -->
+                <div id="tab_3" class="content_tab">
+                    <div class="columns">                        
+                        <div class="column">
+                            <h4><span>Infraestructura</span></h4>
+                            <p>Garantizar operaciones
+                            in-interrumpidas en su red, optimizando costos y asegurando mayores niveles de servicio.</p>
+        
+                            <ul class="list-style">
+                                <li>Monitoreo</li>
+                                <li>Administración de redes</li>
+                                <li>Cableado estructurado</li>
+                                <li>CCTV - Control de Acceso</li>
+                                <li>Networking</li>
+                                <li>Seguridad informática</li>
+                                <li>Servidores - Datacenter</li>
+                                <li>Facilities</li>
+                                <li>UPS</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <img class="img_tab" src="svg/infraestructura.svg" alt="Infraestructura">
+                        </div>
+                    </div>
+                </div>                
+                <!-- Content Tab 4 -->
+
+                <div id="tab_4" class="content_tab">
+                    <div class="columns">
+                        <div class="column">
+                            <img class="img_tab" src="svg/voz.svg" alt="">
+                        </div>
+                        <div class="column">
+                            <h4><span>Voz</span></h4>
+                            <p>Unifique sus comunicaciones a través de espacios de trabajo móviles, integrando herramientas que
+                                proporcionan más eficiencia y un ahorro considerable de costos.</p>
+                            <ul class="list-style">
+                                <li>Administración de telefonía</li>
+                                <li>Administración de recambios</li>
+                                <li>PBX - SIP - Gateway</li>
+                                <li>Integración</li>
+                                <li>Call Center / ACD</li>
+                                <li>Buzón de voz</li>
+                                <li>Call Back</li>
+                                <li>Troncalización / Enrutamiento</li>
+                                <li>Video conferencia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Tab 5 -->
+                <div id="tab_5" class="content_tab">
+                    <div class="columns">
+                        <div class="column">
+                            <h4><span>Procesamiento y Almacenamiento</span></h4>
+                            <p>Implementar soluciones efectivas mediante arquitecturas  orientadas a aumentar el rendimiento y reducir el costo.</p>        
+                            <ul class="list-style">
+                                <li>Virtualización</li>
+                                <li>NAS - SAN</li>
+                                <li>Cloud</li>
+                                <li>Backup</li>
+                                <li>Replicación</li>
+                                <li>Vmotion</li>
+                                <li>Administración de servidores</li>
+                                <li>Soporte de virtualización</li>                                
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <img class="img_tab" src="svg/almacenamiento.svg">
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Tab 6 -->
+                <div id="tab_6" class="content_tab">
+                    <div class="columns">
+                        <div class="column">
+                            <img class="img_tab" src="svg/aplicaciones.svg" alt="">
+                        </div>
+                        <div class="column">
+                            <h4><span>Aplicaciones</span></h4>
+                            <p>Mediante la implementación de un software acorde a sus necesidades, le permitirá realizar sus actividades con mayor eficacia y productividad</p>        
+                            <ul class="list-style">
+                                <li>Mesa de servicios</li>
+                                <li>Desarrollo a la medida</li>
+                                <li>Licenciamiento</li>
+                                <li>CRM - ERP</li>
+                                <li>Sistema contable</li>
+                                <li>E-Learning</li>
+                                <li>Sitios WEB</li>
+                                <li>Administración de dominio</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section id="coverage">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">                        
+                        <img src="svg/colombia_cobertura.svg" alt="Cobertura GT Group">
+                    </div>
+                    <div class="column flex flex_column flex_v_start flex_c_v_center">
+                        <h3 class="text_light">Nuestra <span>Cobertura</span></h3>
+                        <p class="text_light">
+                            Nuestra sede principal está ubicada en Bogotá D.C., con cobertura técnica en las ciudades principales, 
+                            secundarias y llegada a más de <span class="highlight">900 municipios</span> a nivel nacional.
+                        </p>
+                        <p class="text_light">
+                            Nuestra estructura nos permite establecer acuerdos de niveles de servicio muy flexibles, con tiempos 
+                            de respuesta muy agiles, generando alto grado de satisfacción entre nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <section id="contact">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="is-center">Empecemos a <span>trabajar juntos</span></h3>
+                        <div class="form box_shadow">
+                            <blockquote>
+                                <p class="has-text-centered">Pregunta por nuestros servicios TIC, estaremos atentos de brindarte la información necesaria.</p>
+
+                            </blockquote>
+                            <form id="contacto" method="post" action="templates/enviar_form.php">
+                                <div class="control inp">
+                                    <input id="nombre" class="input" type="text" required="" placeholder="nombre">
+                                </div>
+                                <div class="control inp">
+                                    <input id="email" class="input" type="email" required="" placeholder="email">
+                                </div>
+                                <div class="control inp">
+                                    <textarea id="cuerpo" class="textarea" required="" placeholder="Pregúntanos lo que quieras, o si prefieres deja tu número celular para contactarte."></textarea>
+                                </div>
+                                <div class="field is-grouped is-grouped-centered">
+                                    <div class="control">
+                                        <button type="submit" class="btn btn_orange btn_large">Envía tu mensaje</button>
+                                    </div>
+                                </div>
+                                <p class="has-text-centered"><small>Odiamos el Spam tanto como tú. <i class="fas fa-lock"></i> Tus datos están seguros con nosotros.</small></p>
+                            </form>
+                        </div>
+                            
+                    </div>
+                    <div class="column flex flex_column flex_c_v_center flex_v_center">
+                        <div class="contact_box flex">
+                            <span class="contact_box_icon"><i class="fas fa-map-marked-alt fa-2x"></i></span>
+                            <div class="contact_box_text">
+                                <p>Calle 19 No. 10-08 | Oficina 304</p>
+                                <p>Edificio Bogotá</p>
+                                <p>Bogotá D.C.</p>
+                            </div>
+                        </div>
+                        <div class="contact_box flex">
+                            <span class="contact_box_icon"><i class="fas fa-phone fa-2x"></i></span>
+                            <div class="contact_box_text">
+                                <p>Tel: +57 (1) 7527245</p>
+                                <p>Cel: 3162787855 - 3187078199</p>
+                            </div>
+                        </div>
+                        <div class="contact_box flex">
+                            <span class="contact_box_icon"><i class="fas fa-envelope fa-2x"></i></span>
+                            <div class="contact_box_text">
+                                <p>luis.gomez@gtgroupcolombia.com</p>
+                                <p>ferney.trujillo@gtgroupcolombia.com</p>
+                            </div>
+                        </div>
+                        <div class="contact_box">
+                            <div class="social_contact flex flex_s_evenly">
+                                <a class="" href="https://www.facebook.com/gtgroupsas" target="_blank">
+                                    <span><i class="fab fa-facebook-f fa-2x"></i></span>
+                                </a>
+                                <a class="" href="https://www.instagram.com/gtgroupsas" target="_blank">
+                                    <span><i class="fab fa-instagram fa-2x"></i></span>
+                                </a>
+                                <a class="" href="https://www.linkedin.com/gtgroupsas" target="_blank">
+                                    <span><i class="fab fa-linkedin fa-2x"></i></span>
+                                </a>
+                                <a class="" href="https://api.whatsapp.com/send?phone=573187078199&text=Hola!%20Quiero%20obtener%20mas%20información." target="_blank">
+                                    <span><i class="fab fa-whatsapp fa-2x"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright © 2019 GT Group SAS</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+
+    <!-- My Functions -->
+    <script src="js/functions.js"></script>
+
+    <!-- Chat -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5d42410de5ae967ef80dcdb8/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+</html>
