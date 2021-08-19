@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#1c5dad">
     <meta name="author" content="Juan Carlos Oliveros">
     <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/styles.css">
@@ -36,7 +36,7 @@
                 <a class="" href="https://www.instagram.com/gtgroupsas" target="_blank">
                     <span><i class="fab fa-instagram"></i></span>
                 </a>
-                <a class="" href="https://www.linkedin.com/gtgroupsas" target="_blank">
+                <a class="" href="https://www.linkedin.com/company/gtgroupsas" target="_blank">
                     <span><i class="fab fa-linkedin"></i></span>
                 </a>
             </div>
@@ -107,7 +107,7 @@
                                 <div class="icon_tab flex flex_c_v_center flex_v_center">
                                     <i class="fas fa-headset fa-2x"></i>
                                 </div>
-                                <span class="tab_label">Soporte</span>
+                                <span class="tab_label">Informática</span>
                             </a>
                         </li>
                         <li class="tab" onclick="openTab(event,'tab_2')">
@@ -123,7 +123,7 @@
                                 <div class="icon_tab flex flex_c_v_center flex_v_center">
                                     <i class="fas fa-server fa-2x"></i>
                                 </div>
-                                <span class="tab_label">Infraestructura</span>
+                                <span class="tab_label">S. Gestionados</span>
                             </a>
                         </li>
                         <li class="tab" onclick="openTab(event,'tab_4')">
@@ -137,9 +137,9 @@
                         <li class="tab" onclick="openTab(event,'tab_5')">
                             <a class="flex_column">
                                 <div class="icon_tab flex flex_c_v_center flex_v_center">
-                                    <i class="fas fa-database fa-2x"></i>
+                                    <i class="fas fa-solar-panel fa-2x"></i>
                                 </div>
-                                <span class="tab_label">Almacenamiento</span>
+                                <span class="tab_label">E. Fotovoltaica</span>
                             </a>
                         </li>
                         <li class="tab" onclick="openTab(event,'tab_6')">
@@ -156,17 +156,17 @@
                 <div id="tab_1" class="content_tab current_content">
                     <div class="columns">
                         <div class="column">
-                            <h4><span>Soporte técnico especializado</span></h4>
+                            <h4><span>Micro Informática</span></h4>
                             <p>Alcanzar mayor productividad y respaldado con un aliado estratégico que se ocupe de sus comunicaciones mientras su organización se dedica a su negocio.</p>
         
                             <ul class="list-style">
-                                <li>Mesa de servicios</li>
-                                <li>Soporte en sitio</li>
-                                <li>Soporte dedicado</li>
-                                <li>Administración de recambio</li>
-                                <li>Mantenimiento preventivo</li>
-                                <li>Soporte correctivo</li>
-                                <li>Renovación tecnológica</li>
+                                <li>Outsourcing Mesa de Servicios</li>
+                                <li>Soporte Dedicado</li>
+                                <li>Soporte Correctivo</li>
+                                <li>Mantenimiento Preventivo</li>
+                                <li>Administración de Recambios y Gestión de Activos</li>
+                                <li>Renovación Tecnológica</li>
+                                <li>Venta y Renta de Equipos</li>
                             </ul>
                         </div>
                         <div class="column">
@@ -186,38 +186,61 @@
                             <p>Obtener mayores niveles de eficiencia en su parque de impresión bajo la optimización de los recursos.</p>
         
                             <ul class="list-style">
-                                <li>Outsourcing de impresión</li>
-                                <li>Mesa de sevicios</li>
-                                <li>Soporte correctivo</li>
-                                <li>Tracking de impresión</li>
-                                <li>Renta de equipos</li>
-                                <li>Licenciamiento</li>
-                                <li>Repuestos y consumibles</li>
-                                <li>Administración de recambios</li>
-                                <li>Renovación tecnológica</li>
+                                <li>Outsourcing de Impresión</li>
+                                <li>Centro de Copiado</li>
+                                <li>Tracking de Impresión</li>
+                                <li>Repuestos y Consumibles</li>
+                                <li>Soporte Correctivo</li>
+                                <li>Venta y Renta de Equipos</li>                                
                             </ul>
                         </div>                        
                     </div>
                 </div>
 
                 <!-- Content Tab 3 -->
+                <div id="tab_4" class="content_tab">
+                    <div class="columns">
+                        <div class="column">
+                            <img class="img_tab" src="svg/voz.svg" alt="">
+                        </div>
+                        <div class="column">
+                            <h4><span>Voz y Telefonía</span></h4>
+                            <p>Unifique sus comunicaciones a través de espacios de trabajo móviles, integrando herramientas que
+                                proporcionan más eficiencia y un ahorro considerable de costos.</p>
+                            <ul class="list-style">
+                                <li>Administración de Telefonía</li>
+                                <li>PBX</li>
+                                <li>SIP</li>
+                                <li>Gateway</li>
+                                <li>Integración</li>
+                                <li>Call Center / ACD</li>
+                                <li>Troncalización / Enrutamiento</li>                                
+                                <li>Video conferencia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Tab 4 -->
                 <div id="tab_3" class="content_tab">
                     <div class="columns">                        
                         <div class="column">
-                            <h4><span>Infraestructura</span></h4>
+                            <h4><span>Servicios Gestionados</span></h4>
                             <p>Garantizar operaciones
                             in-interrumpidas en su red, optimizando costos y asegurando mayores niveles de servicio.</p>
         
                             <ul class="list-style">
-                                <li>Monitoreo</li>
-                                <li>Administración de redes</li>
-                                <li>Cableado estructurado</li>
+                                <li>Administración de Redes</li>
+                                <li>Cableado Estructurado</li>
                                 <li>CCTV - Control de Acceso</li>
                                 <li>Networking</li>
                                 <li>Seguridad informática</li>
-                                <li>Servidores - Datacenter</li>
-                                <li>Facilities</li>
                                 <li>UPS</li>
+                                <li>Administración de Servidores</li>
+                                <li>Virtualización</li>
+                                <li>NAS - SAN - iCloud</li>
+                                <li>Backup</li>
+                                <li>Venta y Renta de Equipos</li>
                             </ul>
                         </div>
                         <div class="column">
@@ -225,50 +248,23 @@
                         </div>
                     </div>
                 </div>                
-                <!-- Content Tab 4 -->
 
-                <div id="tab_4" class="content_tab">
-                    <div class="columns">
-                        <div class="column">
-                            <img class="img_tab" src="svg/voz.svg" alt="">
-                        </div>
-                        <div class="column">
-                            <h4><span>Voz</span></h4>
-                            <p>Unifique sus comunicaciones a través de espacios de trabajo móviles, integrando herramientas que
-                                proporcionan más eficiencia y un ahorro considerable de costos.</p>
-                            <ul class="list-style">
-                                <li>Administración de telefonía</li>
-                                <li>Administración de recambios</li>
-                                <li>PBX - SIP - Gateway</li>
-                                <li>Integración</li>
-                                <li>Call Center / ACD</li>
-                                <li>Buzón de voz</li>
-                                <li>Call Back</li>
-                                <li>Troncalización / Enrutamiento</li>
-                                <li>Video conferencia</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
                 <!-- Content Tab 5 -->
                 <div id="tab_5" class="content_tab">
                     <div class="columns">
                         <div class="column">
-                            <h4><span>Procesamiento y Almacenamiento</span></h4>
-                            <p>Implementar soluciones efectivas mediante arquitecturas  orientadas a aumentar el rendimiento y reducir el costo.</p>        
+                            <h4><span>Sistemas de Energía Fotovoltaicos</span></h4>
+                            <p>.</p>        
                             <ul class="list-style">
-                                <li>Virtualización</li>
-                                <li>NAS - SAN</li>
-                                <li>Cloud</li>
-                                <li>Backup</li>
-                                <li>Replicación</li>
-                                <li>Vmotion</li>
-                                <li>Administración de servidores</li>
-                                <li>Soporte de virtualización</li>                                
+                                <li>Diseño, Instalación, Configuración y Puesta en Marcha</li>
+                                <li>Suminstro de Equipos</li>
+                                <li>Consultoría</li>
+                                <li>Soporte Correctivo</li>
+                                <li>Mantenimiento Preventivo</li>                             
                             </ul>
                         </div>
                         <div class="column">
-                            <img class="img_tab" src="svg/almacenamiento.svg">
+                            <img class="img_tab" src="svg/paneles_solares.svg">
                         </div>
                     </div>
                 </div>
@@ -281,15 +277,14 @@
                         <div class="column">
                             <h4><span>Aplicaciones</span></h4>
                             <p>Mediante la implementación de un software acorde a sus necesidades, le permitirá realizar sus actividades con mayor eficacia y productividad</p>        
-                            <ul class="list-style">
-                                <li>Mesa de servicios</li>
+                            <ul class="list-style">                                
                                 <li>Desarrollo a la medida</li>
                                 <li>Licenciamiento</li>
-                                <li>CRM - ERP</li>
+                                <li>CRM</li>
+                                <li>ERP</li>
                                 <li>Sistema contable</li>
-                                <li>E-Learning</li>
-                                <li>Sitios WEB</li>
-                                <li>Administración de dominio</li>
+                                <li>Email Marketing</li>
+                                <li>Sitios WEB</li>                                
                             </ul>
                         </div>                        
                     </div>
@@ -358,7 +353,7 @@
                         <div class="contact_box flex">
                             <span class="contact_box_icon"><i class="fas fa-phone fa-2x"></i></span>
                             <div class="contact_box_text">
-                                <p>Tel: +57 (1) 7527245</p>
+                                <p>Tel: +57 (1) 742 7245 Ext. 2204-2201</p>
                                 <p>Cel: 3162787855 - 3187078199</p>
                             </div>
                         </div>
